@@ -1,0 +1,22 @@
+body {
+	font-family: arial;
+}
+
+h1 {
+	text-align: center;
+}
+
+#frame {
+    width: 500px;
+    height: 500px;
+}
+
+.right {
+	width: 40%;
+	float: right;
+}
+
+.left {
+	width: 60%;
+	float: left;
+}

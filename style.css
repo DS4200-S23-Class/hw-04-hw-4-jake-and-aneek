@@ -20,3 +20,23 @@ h1 {
 	width: 60%;
 	float: left;
 }
+
+
+.line {
+	stroke: grey;
+    stroke-width: 20;
+}
+
+.point:hover {
+	fill: #ff6200;
+  }
+
+
+.highlight_point {
+	fill: #191591;
+  }
+
+.highlight_point:hover {
+	fill: #039c08;
+  }
+

@@ -11,29 +11,89 @@
 <body>
     <h1>hw-04: Event Handling</h1>
 
-    <div class="left">
-        <svg id="frame">
-            <line class="line" x1="0" x2="500" y1="500" y2="500"/>
-            <line class="line" x1="0" x2="0" y1="0" y2="500"/>
+    <div class = "left">
 
-            <circle id="point" cx="100" cy="100" r="10" onclick="highlight()"/>
-            <text x="100" y="100">(100,100)</text>
-    
-            <circle class = "point" cx="200" cy="200" r="10"/>
-            <text x="200" y="200">(200,200)</text>
-    
-            <rect class = "point" x="400" y="100" width="20px" height="20px"/>
-            <text x="400" y="100">(400,100)</text>
-    
-            <rect class = "point" x="100" y="400" width="20px" height="20px"/>
-            <text x="100" y="400">(100,400)</text>
+        <svg id="frame">
+                <line class="line" x1="0" x2="500" y1="500" y2="500"/>
+                <line class="line" x1="0" x2="0" y1="0" y2="500"/>
+
+
+                <circle id = "(1,2)" class = "point" cx=10% cy=80% r="10"/>
+                <circle id = "(2,4)" class = "point" cx=20% cy=60% r="10"/>
+                <circle id = "(6,2)" class = "point" cx=60% cy=80% r="10"/>
+                <circle id = "(9,9)" class = "point" cx=90% cy=10% r="10"/>
+                    
+                <!--<circle id="point" cx="100" cy="100" r="10" onclick="highlight()"/>
+                <text x="100" y="100">(100,100)</text>
+        
+                <circle class = "point" cx="200" cy="200" r="10"/>
+                <text x="200" y="200">(200,200)</text>
+        
+                <rect class = "point" x="400" y="100" width="20px" height="20px"/>
+                <text x="400" y="100">(400,100)</text>
+        
+                <rect class = "point" x="100" y="400" width="20px" height="20px"/>
+                <text x="100" y="400">(100,400)</text>-->
         </svg>
+
+    </div>
+
+    <div id = "scatterPlot">
+    <div class = "right">
+            
+            <p id = "lastPoint" class = "inline">Last Point Clicked: (N/A)</p>
+
+            <p></p>
+
+            <p class = "inline">Select the x coordinate for the point you want to add: </p>
+            <select id ="xCoord">
+                <option value = "10%">1</option>
+                <option value = "20%">2</option>
+                <option value = "30%">3</option>
+                <option value = "40%">4</option>
+                <option value = "50%">5</option>
+                <option value = "60%">6</option>
+                <option value = "70%">7</option>
+                <option value = "80%">8</option>
+                <option value = "90%">9</option>
+            </select>
+
+            <p></p>
+
+            <p class = "inline">Select the y coordinate for the point you want to add: </p>
+            <select id ="yCoord">
+                <option value = "90%">1</option>
+                <option value = "80%">2</option>
+                <option value = "70%">3</option>
+                <option value = "60%">4</option>
+                <option value = "50%">5</option>
+                <option value = "40%">6</option>
+                <option value = "30%">7</option>
+                <option value = "20%">8</option>
+                <option value = "10%">9</option>
+            </select>
+
+            <p></p>
+
+            <button id = "addPoint">Add Point</button>
+
+    </div>
+
+    <div id = "footer">
+        <h2>Acknowledgements</h2>
+            <ul>
+                <li>https://www.freecodecamp.org/news/html-drop-down-menu-how-to-add-a-drop-down-list-with-the-select-element/</li>
+                <li>https://stackoverflow.com/questions/28977320/how-do-i-get-the-bullet-points-of-a-ul-to-center-with-the-text</li>
+                <li>https://stackoverflow.com/questions/50111215/add-replace-border-with-onclick</li>
+                <li>https://dev.to/gavinsykes/appending-a-child-to-an-svg-using-pure-javascript-1h9g</li>
+                <li>https://stackoverflow.com/questions/3427132/how-to-get-first-character-of-string</li>
+                <li>Reference JS Class Demo 2</li>
+            </ul>
+    </div>
     </div>
 
     <script src="script.js"></script>
-
-
-
+      
 </body>
 
 </html>

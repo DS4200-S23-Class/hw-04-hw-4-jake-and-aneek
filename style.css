@@ -1,9 +1,26 @@
 body {
 	font-family: arial;
+	height: 100vh;
 }
 
 h1 {
 	text-align: center;
+}
+
+ul {
+  list-style-position: inside;
+}
+
+circle {
+	fill: #002ae3;
+}
+
+circle:hover {
+	fill: #ff6200;
+}
+
+#scatterPlot {
+	height: 50vh;
 }
 
 #frame {
@@ -11,32 +28,36 @@ h1 {
     height: 500px;
 }
 
+#footer {
+	padding-top: 5%;
+	clear: both;
+	text-align: center;
+}
+
 .right {
-	width: 40%;
+	padding-top: 160px;
 	float: right;
+	width: 40%;
 }
 
 .left {
-	width: 60%;
 	float: left;
+	width: 60%;
+    text-align:center;
 }
 
+
+.inline {
+	display: inline;
+}
 
 .line {
-	stroke: grey;
-    stroke-width: 20;
+	stroke: black;
+    stroke-width: 10;
 }
 
-.point:hover {
-	fill: #ff6200;
-  }
-
-
-.highlight_point {
-	fill: #191591;
-  }
-
-.highlight_point:hover {
-	fill: #039c08;
-  }
+.addStroke { 
+	stroke: lightgreen;
+	stroke-width: 4px;
+}
 

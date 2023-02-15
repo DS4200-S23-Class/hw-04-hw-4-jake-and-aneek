@@ -1,3 +1,4 @@
+// allows users to click on points and have them highlight or un-highlight
 function clickPoint(id) {
     let point = document.getElementById(id);
     point.classList.toggle("addStroke");
@@ -6,6 +7,7 @@ function clickPoint(id) {
     document.getElementById("lastPoint").innerHTML = newText;
 }
 
+// allows users to add points to graph
 function addPoint() {
     let xCoord = document.getElementById("xCoord").value;
     let yCoord = document.getElementById("yCoord").value;
@@ -24,14 +26,18 @@ function addPoint() {
     newPoint.addEventListener("click", () => clickPoint(newPoint.id));
 }
 
+// add points when button is clicked 
 document.getElementById("addPoint").addEventListener("click", addPoint);
 
 /*
 Utilized method from this link:  
 https://stackoverflow.com/questions/50111215/add-replace-border-with-onclick 
 */ 
+
+// collects all points 
 let points = document.getElementsByClassName("point");
 
+// loops through all points looking for a click 
 for (let i = 0; i < points.length; i++) {
     document.getElementsByClassName("point")[i].addEventListener("click", () => {clickPoint(points[i].id)});
 }
